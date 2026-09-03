@@ -45,7 +45,7 @@ Parametrů i argumentů může být víc, žádný nebo jen některé. Samotné 
 
 | Příkaz | Co udělá |
 | --- | --- |
-| `dir` | vypíše obsah aktuální složky, u windows lze také využívat alias `ls` |
+| `dir` | vypíše obsah aktuální složky |
 | `dir /b` | jen jména, bez datumů a velikostí |
 | `dir /a` | ukáže i skryté a systémové soubory |
 | `cd Windows` | přejde do složky |
@@ -53,3 +53,5 @@ Parametrů i argumentů může být víc, žádný nebo jen některé. Samotné 
 | `cd \` | do kořene jednotky |
 | `cd %USERPROFILE%` | domů |
 | `D:` | přepne na jinou jednotku |
+
+V PowerShellu funguje na výpis i `ls`, ale jen samotné — parametry má jiné než v Linuxu. V `cmd` příkaz `ls` neexistuje.

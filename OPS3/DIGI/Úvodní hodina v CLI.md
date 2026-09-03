@@ -15,7 +15,7 @@ student@ubuntu:~/dokumenty$
 | `$` | jsi běžný uživatel |
 | `#` | jsi root, tedy správce |
 
-Podobu promptu drží proměnná `PS1`. Vápis lze příkazem `echo $PS1`.
+Podobu promptu drží proměnná `PS1`. Výpis lze příkazem `echo $PS1`.
 
 ## Příkaz, parametry a argumenty
 
