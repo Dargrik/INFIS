@@ -8,15 +8,13 @@ Windows dělí úložiště na jednotky označené písmenem. Každá má vlastn
 | `D:` | druhý disk nebo optická mechanika |
 | `Z:` | připojená síťová jednotka |
 
-```
-wmic logicaldisk get name, size, freespace
-```
-
-V PowerShellu:
+Jednotky a volné místo vypíšeš v PowerShellu:
 
 ```powershell
 Get-PSDrive -PSProvider FileSystem
 ```
+
+Ve starých návodech najdeš `wmic logicaldisk`. Microsoft `wmic` vyřadil a v nových Windows 11 už není.
 
 Síťové umístění se dá použít i bez písmene, přes cestu **UNC**:
 
@@ -34,7 +32,7 @@ Síťové umístění se dá použít i bez písmene, přes cestu **UNC**:
 | `C:\Program Files (x86)` | 32bitové aplikace |
 | `C:\Users` | data uživatelů |
 | `C:\ProgramData` | data aplikací společná všem uživatelům |
-| `C:\Temp` | dočasné soubory |
+| `C:\Windows\Temp` | dočasné soubory systému |
 
 ### System32 a SysWOW64
 
@@ -104,7 +102,7 @@ Místo dlouhých cest se používají proměnné. Fungují všude, i v Průzkumn
 | `%PROGRAMFILES%` | `C:\Program Files` |
 | `%PROGRAMDATA%` | `C:\ProgramData` |
 | `%WINDIR%` | `C:\Windows` |
-| `%TEMP%` | dočasná složka |
+| `%TEMP%` | tvoje dočasná složka, `C:\Users\jmeno\AppData\Local\Temp` |
 
 ```
 echo %USERPROFILE%
